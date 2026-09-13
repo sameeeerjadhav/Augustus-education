@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission | Augustus Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            text-align: center;
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        .steps {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        .step {
+            flex: 1;
+            background: var(--color-surface);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .step-num {
+            width: 50px;
+            height: 50px;
+            background: var(--color-primary);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto var(--spacing-md);
+        }
+    </style>
+</head>
+<body>
+    <div class="blob" style="top: 20%; right: 10%;"></div>
+    <div class="container">
+        
+        <!-- Navigation -->
+        <header>
+            <div class="logo">
+                AUGUSTUS
+                <span>EDUCATION</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="admission.html" class="active">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-light">Enroll now</a>
+        </header>
+
+        <div class="page-header">
+            <h1>Join Our Family</h1>
+            <p>Admissions are now open for the upcoming academic year.</p>
+        </div>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Submit Inquiry</h3>
+                    <p>Fill out our simple online form to express your interest and schedule a tour of our campus.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>School Tour</h3>
+                    <p>Visit us to see our classrooms, meet the teachers, and learn more about our AI-integrated curriculum.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Enrollment</h3>
+                    <p>Complete the application packet, submit required documents, and secure your child's spot.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-xl);">
+                <a href="contact.html" class="btn btn-dark" style="font-size: 1.2rem; padding: 15px 40px;">Apply Now</a>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

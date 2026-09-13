@@ -114,8 +114,9 @@ nav a:hover, nav a.active {
 }
 
 .btn-dark:hover {
-  background: #1e293b;
+  background: #172554;
   transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.3);
 }
 
 .btn-outline {
@@ -445,6 +446,12 @@ nav a:hover, nav a.active {
   border: 1px solid var(--color-text-light);
   border-radius: 8px;
   font-family: inherit;
+  transition: var(--transition);
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
 }
 .info-item {
   display: flex;

@@ -41,6 +41,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+/* Lucide Icon Sizes */
+.icon-sm {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.icon-md {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
 a {
   text-decoration: none;
   color: inherit;

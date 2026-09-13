@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Initialize Lucide icons
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (menuToggle && navMenu && navMenu.classList.contains('active')) {

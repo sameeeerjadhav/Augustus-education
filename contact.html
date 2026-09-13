@@ -6,47 +6,7 @@
     <title>Contact Us | Augustus Education</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .page-header {
-            text-align: center;
-            padding: var(--spacing-xl) 0 var(--spacing-lg);
-        }
-        .page-header h1 {
-            font-size: 3.5rem;
-            margin-bottom: var(--spacing-sm);
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-xl);
-            margin-top: var(--spacing-lg);
-        }
-        .form-group {
-            margin-bottom: var(--spacing-md);
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--ast-border-color, #cbd5e1);
-            border-radius: 8px;
-            font-family: inherit;
-        }
-        .contact-info h3 {
-            margin-bottom: var(--spacing-md);
-        }
-        .info-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: var(--spacing-sm);
-            font-size: 1.1rem;
-        }
-    </style>
+
 </head>
 <body>
     <div class="container">
@@ -57,7 +17,12 @@
                 AUGUSTUS
                 <span>EDUCATION</span>
             </div>
-            <nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -66,7 +31,7 @@
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#" class="btn btn-light">Enroll now</a>
+            <a href="#" class="btn btn-light header-btn">Enroll now</a>
         </header>
 
         <div class="page-header">

@@ -6,42 +6,7 @@
     <title>Admission | Augustus Education</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .page-header {
-            text-align: center;
-            padding: var(--spacing-xl) 0 var(--spacing-lg);
-        }
-        .page-header h1 {
-            font-size: 3.5rem;
-            margin-bottom: var(--spacing-sm);
-        }
-        .steps {
-            display: flex;
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-lg);
-        }
-        .step {
-            flex: 1;
-            background: var(--color-surface);
-            padding: var(--spacing-lg);
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        .step-num {
-            width: 50px;
-            height: 50px;
-            background: var(--color-primary);
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 auto var(--spacing-md);
-        }
-    </style>
+
 </head>
 <body>
     <div class="blob" style="top: 20%; right: 10%;"></div>
@@ -53,7 +18,12 @@
                 AUGUSTUS
                 <span>EDUCATION</span>
             </div>
-            <nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -62,7 +32,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#" class="btn btn-light">Enroll now</a>
+            <a href="#" class="btn btn-light header-btn">Enroll now</a>
         </header>
 
         <div class="page-header">

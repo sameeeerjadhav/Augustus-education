@@ -388,31 +388,217 @@ nav a:hover, nav a.active {
   gap: 8px;
 }
 
-/* Responsive basics */
-@media (max-width: 900px) {
+/* --- Unified Page Layouts --- */
+.page-header {
+  text-align: center;
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+}
+.page-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Steps Grid */
+.steps {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+.step {
+  flex: 1;
+  background: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.step-num {
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto var(--spacing-md);
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-text-light);
+  border-radius: 8px;
+  font-family: inherit;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: var(--spacing-md);
+  font-size: 1.1rem;
+}
+
+/* --- Mobile Menu Styles --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* --- Responsive Breakpoints --- */
+@media (max-width: 992px) {
+  .hero h1 { font-size: 3rem; }
+  .page-header h1 { font-size: 2.8rem; }
+  .split-content h2 { font-size: 2.5rem; }
+  
+  .hero-image-group {
+    height: 500px;
+  }
+  .img-main {
+    width: 300px;
+    height: 400px;
+    right: 50px;
+  }
+  .img-sub {
+    width: 200px;
+    height: 300px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 350px;
+    height: 100vh;
+    background: var(--color-surface);
+    padding: 100px 30px 30px;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    z-index: 999;
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-menu ul {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .nav-menu a {
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .header-btn {
+    display: none; /* Hide header enroll button on mobile to save space */
+  }
+
+  /* Layout */
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: var(--spacing-lg) 0;
+  }
+  .hero-content {
+    max-width: 100%;
   }
   .hero-actions {
     justify-content: center;
+    flex-wrap: wrap;
   }
   .hero-image-group {
     height: 400px;
     margin-top: var(--spacing-lg);
     justify-content: center;
+    width: 100%;
   }
   .img-main {
     position: relative;
     right: 0;
+    width: 100%;
+    max-width: 350px;
   }
   .img-sub {
     display: none;
   }
+  
   .split-section {
     flex-direction: column;
   }
+  .split-section.reverse {
+    flex-direction: column-reverse;
+  }
+  
   .cards-grid {
     grid-template-columns: 1fr;
   }
+  
+  .steps {
+    flex-direction: column;
+  }
+  
+  /* Typography */
+  .hero h1 { font-size: 2.5rem; }
+  .page-header h1 { font-size: 2.2rem; }
+  .split-content h2 { font-size: 2rem; }
+  
+  /* Adjust Spacing */
+  .section { padding: var(--spacing-lg) 0; }
+  .blob { display: none; } /* Hide blob on small screens to prevent overflow issues */
 }

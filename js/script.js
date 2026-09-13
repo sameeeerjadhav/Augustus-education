@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add simple scroll animations or interactions here later
-    console.log('Augustus Education site loaded.');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (menuToggle && navMenu && navMenu.classList.contains('active')) {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        }
+    });
 });

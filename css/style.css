@@ -651,6 +651,34 @@ nav a:hover, nav a.active {
   color: var(--color-primary);
 }
 
+/* --- Index Page Utilities --- */
+.section-center {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+.section-subtitle {
+  margin-bottom: var(--spacing-md);
+}
+.section-title-large {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+.btn-margin {
+  margin-top: var(--spacing-sm);
+}
+.center-label {
+  justify-content: center;
+}
+.center-text {
+  text-align: center;
+}
+.teacher-card {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 /* --- Admission Page Styles --- */
 .admission-header {
   text-align: left;
@@ -892,6 +920,7 @@ nav a:hover, nav a.active {
 
   .admission-title { font-size: 2.5rem; }
   .docs-title { font-size: 2.2rem; }
+  .section-title-large { font-size: 2.2rem; }
   .docs-content { padding: var(--spacing-md); }
 
   .feature-card-horizontal {

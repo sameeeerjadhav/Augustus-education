@@ -492,6 +492,132 @@ nav a:hover, nav a.active {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+/* --- Pricing Section --- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: var(--spacing-xl);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.pricing-card {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: transparent;
+  border-right: 1px solid var(--color-primary);
+  display: flex;
+  flex-direction: column;
+}
+.pricing-card:last-child {
+  border-right: none;
+}
+.pricing-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+.pricing-title {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+.pricing-desc {
+  margin-bottom: var(--spacing-xl);
+  flex-grow: 1;
+}
+.pricing-footer {
+  border-top: 1px solid var(--color-primary);
+  padding-top: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.pricing-price {
+  font-size: 1.25rem;
+}
+
+/* --- Why Us Section --- */
+.feature-list {
+  list-style: none;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+.feature-list li .check {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+.feature-card {
+  background: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.feature-card .icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* --- Gallery Section --- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+.gallery-item {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1; /* Default square */
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-item.tall {
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+.gallery-item.wide {
+  grid-column: span 2;
+  aspect-ratio: 2/1;
+}
+
+/* --- Teachers Section --- */
+.teacher-img-wrap {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+  aspect-ratio: 3/4;
+}
+.teacher-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* --- Responsive Breakpoints --- */
 @media (max-width: 992px) {
   .hero h1 { font-size: 3rem; }
@@ -590,10 +716,28 @@ nav a:hover, nav a.active {
     flex-direction: column-reverse;
   }
   
-  .cards-grid {
+  .cards-grid, .pricing-grid, .gallery-grid {
     grid-template-columns: 1fr;
   }
   
+  .pricing-card {
+    border-right: none;
+    border-bottom: 1px solid var(--color-primary);
+  }
+  .pricing-card:last-child {
+    border-bottom: none;
+  }
+  
+  .gallery-item.tall, .gallery-item.wide {
+    grid-row: span 1;
+    grid-column: span 1;
+    aspect-ratio: 1;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
   .steps {
     flex-direction: column;
   }

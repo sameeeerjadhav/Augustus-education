@@ -618,6 +618,52 @@ nav a:hover, nav a.active {
   object-fit: cover;
 }
 
+/* --- Footer --- */
+.site-footer {
+  background-color: var(--color-surface);
+  padding: var(--spacing-xl) 0 0;
+  margin-top: var(--spacing-xl);
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+.footer-logo {
+  height: 60px;
+  margin-bottom: var(--spacing-md);
+}
+.footer-col h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.25rem;
+}
+.footer-links, .footer-contact {
+  list-style: none;
+}
+.footer-links li, .footer-contact li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: var(--transition);
+}
+.footer-links a:hover {
+  color: var(--color-secondary);
+}
+.footer-bottom {
+  text-align: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  font-size: 0.9rem;
+}
+
 /* --- Responsive Breakpoints --- */
 @media (max-width: 992px) {
   .hero h1 { font-size: 3rem; }
@@ -734,7 +780,7 @@ nav a:hover, nav a.active {
     aspect-ratio: 1;
   }
   
-  .feature-grid {
+  .feature-grid, .footer-container {
     grid-template-columns: 1fr;
   }
 

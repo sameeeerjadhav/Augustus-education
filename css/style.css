@@ -813,8 +813,8 @@ nav a:hover, nav a.active {
     aspect-ratio: 1;
   }
   
-  .feature-grid, .footer-container {
-    grid-template-columns: 1fr;
+  .feature-grid, .footer-container, .steps-grid {
+    grid-template-columns: 1fr !important;
   }
 
   .feature-card-horizontal {

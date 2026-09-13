@@ -34,10 +34,10 @@
             <a href="admission.html" class="btn btn-light header-btn">Enroll now</a>
         </header>
 
-        <div class="page-header" style="text-align: left; padding: var(--spacing-xl) 0; position: relative;">
-            <div class="section-label" style="justify-content: flex-start; margin-bottom: var(--spacing-sm);">Admission</div>
-            <h1 style="font-size: 4rem; color: var(--color-text);">Ready to enroll?<br>We hope to meet you soon</h1>
-            <p style="color: var(--color-text-light); max-width: 800px; margin: var(--spacing-md) 0;">Thank you for your interest in Augustus Education. Our admission process is simple and designed to ensure we are the right fit for your child's educational journey.</p>
+        <div class="page-header admission-header">
+            <div class="section-label admission-label">Admission</div>
+            <h1 class="admission-title">Ready to enroll?<br>We hope to meet you soon</h1>
+            <p class="admission-subtitle">Thank you for your interest in Augustus Education. Our admission process is simple and designed to ensure we are the right fit for your child's educational journey.</p>
             <div class="phone-contact" style="margin-top: var(--spacing-lg);">
                 <div class="phone-icon" style="background-color: var(--color-secondary); color: white;">📞</div>
                 +91 94215 34440
@@ -116,25 +116,25 @@
         </section>
 
         <section class="section" style="padding-top: 0;">
-            <div class="section-label" style="justify-content: flex-start; margin-bottom: var(--spacing-md);">The process</div>
-            <div class="steps-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-md);">
-                <div class="step-card" style="border: 2px solid var(--color-primary); border-radius: var(--border-radius); padding: var(--spacing-xl) var(--spacing-lg); background: var(--color-surface); text-align: left; display: flex; flex-direction: column;">
-                    <div style="color: var(--color-primary); font-size: 2.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">01</div>
+            <div class="section-label admission-label">The process</div>
+            <div class="admission-steps">
+                <div class="step-card">
+                    <div class="step-num-large">01</div>
                     <h3 style="color: var(--color-text); margin-bottom: var(--spacing-sm);">Take a tour</h3>
                     <p>Visit us to see our classrooms, meet the teachers, and learn more about our curriculum.</p>
                 </div>
-                <div class="step-card" style="border: 2px solid var(--color-primary); border-radius: var(--border-radius); padding: var(--spacing-xl) var(--spacing-lg); background: var(--color-surface); text-align: left; display: flex; flex-direction: column;">
-                    <div style="color: var(--color-primary); font-size: 2.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">02</div>
+                <div class="step-card">
+                    <div class="step-num-large">02</div>
                     <h3 style="color: var(--color-text); margin-bottom: var(--spacing-sm);">Submit application</h3>
                     <p>Fill out our simple online form to express your interest in admitting your child.</p>
                 </div>
-                <div class="step-card" style="border: 2px solid var(--color-primary); border-radius: var(--border-radius); padding: var(--spacing-xl) var(--spacing-lg); background: var(--color-surface); text-align: left; display: flex; flex-direction: column;">
-                    <div style="color: var(--color-primary); font-size: 2.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">03</div>
+                <div class="step-card">
+                    <div class="step-num-large">03</div>
                     <h3 style="color: var(--color-text); margin-bottom: var(--spacing-sm);">Meet and greet</h3>
                     <p>An informal interaction with the principal to discuss your child's specific needs.</p>
                 </div>
-                <div class="step-card" style="border: 2px solid var(--color-primary); border-radius: var(--border-radius); padding: var(--spacing-xl) var(--spacing-lg); background: var(--color-surface); text-align: left; display: flex; flex-direction: column;">
-                    <div style="color: var(--color-primary); font-size: 2.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">04</div>
+                <div class="step-card">
+                    <div class="step-num-large">04</div>
                     <h3 style="color: var(--color-text); margin-bottom: var(--spacing-sm);">Secure a spot</h3>
                     <p>Submit required documents and complete the fee payment to secure the admission.</p>
                 </div>
@@ -142,20 +142,20 @@
         </section>
 
         <section class="section" style="padding-top: 0;">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
-                <img src="assets/hero_main.jpg" alt="Activity" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--border-radius);">
-                <img src="assets/about_kid.jpg" alt="Activity" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--border-radius);">
+            <div class="two-img-grid">
+                <img src="assets/hero_main.jpg" alt="Activity">
+                <img src="assets/about_kid.jpg" alt="Activity">
             </div>
         </section>
 
-        <section class="section split-section" style="align-items: center;">
+        <section class="section split-section docs-section">
             <div class="split-content" style="flex: 1;">
-                <h2 style="font-size: 3.5rem; margin-bottom: var(--spacing-md); color: var(--color-text);">Required enrollment documents</h2>
+                <h2 class="docs-title">Required enrollment documents</h2>
                 <p style="margin-bottom: var(--spacing-lg); font-size: 1.1rem;">Please ensure you have the following documents ready before the final step of enrollment. This helps us process the admission smoothly.</p>
                 <a href="contact.html" class="btn btn-dark">Enroll Now</a>
             </div>
-            <div class="split-content" style="flex: 1; background: var(--color-surface); padding: var(--spacing-xl); border-radius: var(--border-radius);">
-                <ul class="feature-list" style="margin: 0; padding-top: var(--spacing-md); border-top: 2px solid var(--color-primary);">
+            <div class="split-content docs-content">
+                <ul class="feature-list docs-list">
                     <li><span class="check" style="color: var(--color-secondary);">✓</span> Previous year report card</li>
                     <li><span class="check" style="color: var(--color-secondary);">✓</span> Financial agreement</li>
                     <li><span class="check" style="color: var(--color-secondary);">✓</span> Medical authorization</li>

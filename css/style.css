@@ -619,6 +619,38 @@ nav a:hover, nav a.active {
   object-fit: cover;
 }
 
+/* --- Vertical Feature Cards --- */
+.feature-list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.feature-card-horizontal {
+  background: var(--color-surface);
+  padding: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.feature-card-horizontal .icon-circle {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.feature-card-horizontal .content h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
 /* --- Footer --- */
 .site-footer {
   background-color: var(--color-surface);
@@ -783,6 +815,12 @@ nav a:hover, nav a.active {
   
   .feature-grid, .footer-container {
     grid-template-columns: 1fr;
+  }
+
+  .feature-card-horizontal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .steps {

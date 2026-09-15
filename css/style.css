@@ -172,6 +172,7 @@ nav a:hover, nav a.active {
 .hero h1 {
   font-size: 4rem;
   margin-bottom: var(--spacing-md);
+  font-weight: 500;
 }
 
 .hero p {
